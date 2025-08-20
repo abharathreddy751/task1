@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>HTML CSS JS Task</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <nav>
+    <h1>My Website</h1>
+    <ul>
+      <li><a href="#form-section">Contact</a></li>
+      <li><a href="#todo-section">To-Do List</a></li>
+    </ul>
+  </nav>
+
+  <main>
+    <section id="form-section" class="content card">
+      <h2>Contact Form</h2>
+      <form id="contactForm">
+        <label for="name">Name:</label>
+        <input type="text" id="name" placeholder="Enter your name">
+
+        <label for="email">Email:</label>
+        <input type="email" id="email" placeholder="Enter your email">
+
+        <label for="message">Message:</label>
+        <textarea id="message" placeholder="Type your message"></textarea>
+
+        <button type="submit">Submit</button>
+        <p id="formError" class="error"></p>
+        <p id="formSuccess" class="success"></p>
+      </form>
+    </section>
+
+    <section id="todo-section" class="content card">
+      <h2>To-Do List</h2>
+      <div class="todo-container">
+        <input type="text" id="taskInput" placeholder="Add a new task">
+        <button id="addTaskBtn">Add Task</button>
+        <ul id="taskList"></ul>
+      </div>
+    </section>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
